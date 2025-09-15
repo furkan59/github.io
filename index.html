@@ -5,16 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Dream Tech</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f0f2f5; color: #333; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { color: #0056b3; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            color: #4b4f56;
+            line-height: 1.6;
+        }
+        .team-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #dddfe2;
+        }
+        h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .team-member {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .team-member h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            color: #0056b3;
+        }
+        .linkedin-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0077b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .linkedin-button:hover {
+            background-color: #005582;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Dream Tech!</h1>
-        <p>This is your simple, static website hosted on GitHub Pages.</p>
-        <p>Your custom domain <strong>dreamtechtr.com</strong> will point here once you've configured your DNS settings.</p>
+        <p>A modern software design company dedicated to building elegant solutions.</p>
+
+        <div class="team-section">
+            <h2>Our Founders</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Furkan Katı</h3>
+                    <a href="https://www.linkedin.com/in/furkan-kat%C4%B1-b7856761/" target="_blank" class="linkedin-button">View Profile</a>
+                </div>
+                <div class="team-member">
+                    <h3>Volkan Ayaz</h3>
+                    <a href="https://www.linkedin.com/in/volkan-ayaz-b0b81774/" target="_blank" class="linkedin-button">View Profile</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
